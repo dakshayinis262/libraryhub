@@ -1,0 +1,490 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  padding: 18px 32px;
+
+  background: linear-gradient(135deg, #1e5a43 0%, #2b704f 100%);
+  box-shadow: 0 4px 14px rgba(21, 61, 46, 0.15);
+}
+
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-name {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 18px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.home-page {
+  background: linear-gradient(180deg, rgba(30, 90, 67, 0.08), rgba(30, 90, 67, 0.02));
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 32px 40px;
+  text-align: center;
+  color: #174d3a;
+}
+
+.home-page h1 {
+  color: #174d3a;
+  margin-bottom: 16px;
+}
+
+.home-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2d5f50;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.home-card {
+  background: linear-gradient(180deg, #f4fbf7 0%, #ebf7ee 100%);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(30, 90, 67, 0.12);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.home-card h2 {
+  color: #1e5a43;
+}
+
+.home-card p {
+  color: #315f50;
+}
+
+
+/* =========================
+   BOOKS PAGE
+========================= */
+
+.books-page {
+  padding: 0 32px 40px;
+}
+
+.books-page h1 {
+  text-align: center;
+}
+
+.books-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 24px;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+.book-card {
+  background-color: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h2 {
+  margin-top: 0;
+  color: #234f36;
+}
+
+.book-card p {
+  line-height: 1.6;
+}
+
+
+/* =========================
+   ISSUE BOOK
+========================= */
+
+.issue-page {
+  max-width: 560px;
+
+  margin: 0 auto;
+
+  padding: 0 32px 40px;
+}
+
+.issue-page h1 {
+  text-align: center;
+}
+
+.issue-form,
+.issue-details {
+  padding: 28px;
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.issue-form {
+  display: grid;
+
+  gap: 10px;
+
+  text-align: left;
+}
+
+.issue-form label {
+  margin-top: 8px;
+
+  font-weight: bold;
+
+  color: #234f36;
+}
+
+.issue-form input,
+.issue-form select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  border: 1px solid #c5cad3;
+
+  border-radius: 6px;
+
+  font: inherit;
+}
+
+.issue-form input:focus,
+.issue-form select:focus {
+  outline: 2px solid #91c99e;
+
+  border-color: #234f36;
+}
+
+.issue-form select {
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.issue-form button {
+  margin-top: 15px;
+
+  padding: 11px 20px;
+
+  border: 0;
+
+  border-radius: 6px;
+
+  background-color: #234f36;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.issue-form button:hover {
+  background-color: #356f4c;
+}
+
+.issue-details {
+  margin-top: 24px;
+
+  text-align: left;
+}
+
+.issue-details h3 {
+  margin-top: 0;
+
+  color: #234f36;
+}
+
+.issue-details p {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin: 12px 0;
+}
+
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-page {
+  padding: 0 32px 40px;
+}
+
+.history-page h1 {
+  text-align: center;
+}
+
+.history-button {
+  display: block;
+
+  margin: 0 auto 24px;
+
+  padding: 11px 20px;
+
+  border: 0;
+
+  border-radius: 6px;
+
+  background-color: #234f36;
+
+  color: white;
+
+  cursor: pointer;
+
+  font: inherit;
+}
+
+.history-button:hover {
+  background-color: #356f4c;
+}
+
+.history-table-wrapper {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  overflow-x: auto;
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.history-table {
+  width: 100%;
+
+  min-width: 700px;
+
+  border-collapse: collapse;
+
+  text-align: left;
+}
+
+.history-table th,
+.history-table td {
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #e1e5eb;
+}
+
+.history-table th {
+  background-color: #234f36;
+
+  color: white;
+
+  font-weight: bold;
+}
+
+.history-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.history-table tbody tr:hover {
+  background-color: #f2f7f3;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    padding: 16px 20px;
+  }
+
+  .navbar h2 {
+    font-size: 21px;
+  }
+
+  .navbar-links {
+    justify-content: flex-start;
+
+    gap: 10px 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+
+    margin: 24px 0;
+  }
+
+  .home-page,
+  .books-page,
+  .issue-page,
+  .history-page {
+    padding-left: 20px;
+
+    padding-right: 20px;
+  }
+
+  .books-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .issue-form,
+  .issue-details {
+    padding: 20px;
+  }
+
+  .history-table-wrapper {
+    background-color: transparent;
+
+    box-shadow: none;
+
+    overflow: visible;
+  }
+
+  .history-table {
+    min-width: 0;
+  }
+
+  .history-table thead {
+    display: none;
+  }
+
+  .history-table,
+  .history-table tbody,
+  .history-table tr,
+  .history-table td {
+    display: block;
+  }
+
+  .history-table tr {
+    margin-bottom: 18px;
+
+    padding: 8px 0;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+      0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .history-table td {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    border-bottom: 1px solid #e1e5eb;
+
+    text-align: right;
+  }
+
+  .history-table td::before {
+    color: #234f36;
+
+    font-weight: bold;
+
+    text-align: left;
+  }
+
+  .history-table td:nth-child(1)::before {
+    content: "Member";
+  }
+
+  .history-table td:nth-child(2)::before {
+    content: "Email";
+  }
+
+  .history-table td:nth-child(3)::before {
+    content: "Book";
+  }
+
+  .history-table td:nth-child(4)::before {
+    content: "Issue Date";
+  }
+
+  .history-table td:nth-child(5)::before {
+    content: "Status";
+  }
+
+  .history-table td:last-child {
+    border-bottom: 0;
+  }
+}
